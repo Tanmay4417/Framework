@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Functionality" class="navigator-link">
+              <span class="suite-name border-failed">Functionality</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Functionality" class="navigator-link ">
+                    <span>D:\Selenium_programs\com.Framework\FunctionalitySuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Functionality" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Functionality" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Functionality" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Functionality" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Functionality" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Functionality" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Functionality" class="hide-methods failed suite-Functionality"> (hide)</a> <!-- hide-methods failed suite-Functionality -->
+                      <a href="#" panel-name="suite-Functionality" class="show-methods failed suite-Functionality"> (show)</a> <!-- show-methods failed suite-Functionality -->
+                    </span>
+                    <div class="method-list-content failed suite-Functionality">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Functionality" title="com.Framework.WelcomeTest.VerifyWelcomePageTest" class="method navigator-link" hash-for-method="verifywelcomepageWithValidInput">verifywelcomepageWithValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Functionality -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Functionality" class="hide-methods skipped suite-Functionality"> (hide)</a> <!-- hide-methods skipped suite-Functionality -->
+                      <a href="#" panel-name="suite-Functionality" class="show-methods skipped suite-Functionality"> (show)</a> <!-- show-methods skipped suite-Functionality -->
+                    </span>
+                    <div class="method-list-content skipped suite-Functionality">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Functionality" title="com.Framework.WelcomeTest.VerifyWelcomePageTest" class="method navigator-link" hash-for-method="verifyWelcomepageWithinValidinput">verifyWelcomepageWithinValidinput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Functionality -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Functionality" class="panel Functionality">
+          <div class="suite-Functionality-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Framework.WelcomeTest.VerifyWelcomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifywelcomepageWithValidInput">
+                  </a> <!-- verifywelcomepageWithValidInput -->
+                  <span class="method-name">verifywelcomepageWithValidInput</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)&apos;
+	at com.Framework.PageRepository.WelcomePage.&lt;init&gt;(WelcomePage.java:13)
+	at com.Framework.PageRepository.PageManagment.initwelcomepage(PageManagment.java:26)
+	at com.Framework.WelcomeTest.VerifyWelcomePageTest.verifywelcomepageWithValidInput(VerifyWelcomePageTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Functionality-class-failed -->
+          <div class="suite-Functionality-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.Framework.WelcomeTest.VerifyWelcomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWelcomepageWithinValidinput">
+                  </a> <!-- verifyWelcomepageWithinValidinput -->
+                  <span class="method-name">verifyWelcomepageWithinValidinput</span>
+                  <div class="stack-trace">java.lang.Throwable: Method VerifyWelcomePageTest.verifyWelcomepageWithinValidinput()[pri:2, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Functionality-class-skipped -->
+        </div> <!-- panel Functionality -->
+        <div panel-name="test-xml-Functionality" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Selenium_programs\com.Framework\FunctionalitySuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Functionality&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest &quot;&gt;
+    &lt;parameter name=&quot;weburl&quot; value=&quot;file:///D:/Selenium_programs/com.Framework/src/main/resources/SoftWares/webpage.html&quot;/&gt;
+    &lt;parameter name=&quot;browsername&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Framework.WelcomeTest.VerifyWelcomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest  --&gt;
+&lt;/suite&gt; &lt;!-- Functionality --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Functionality" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Functionality</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest  (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Functionality" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Functionality</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Functionality" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Functionality</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Functionality');
+function tableData_Functionality() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifywelcomepageWithValidInput')
+data.setCell(0, 2, 'com.Framework.WelcomeTest.VerifyWelcomePageTest')
+data.setCell(0, 3, 44);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyWelcomepageWithinValidinput')
+data.setCell(1, 2, 'com.Framework.WelcomeTest.VerifyWelcomePageTest')
+data.setCell(1, 3, 0);
+window.suiteTableData['Functionality']= { tableData: data, tableDiv: 'times-div-Functionality'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 44 ms</span>
+              <div id="times-div-Functionality">
+              </div> <!-- times-div-Functionality -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Functionality" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Functionality</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifywelcomepageWithValidInput</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Title VerifiedLearning Selenium</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Functionality" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Functionality" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Framework.WelcomeTest.VerifyWelcomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">suitsetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">browserSetup(chrome, file:///D:/Selenium_programs/com.Framework/src/main/resources/SoftWares/webpage.html)</span>
+                <span class="method-start">543 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifywelcomepageWithValidInput</span>
+                <span class="method-start">3153 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyWelcomepageWithinValidinput</span>
+                <span class="method-start">3209 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">terminatebrowser</span>
+                <span class="method-start">3221 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">suiteTerminateSetup</span>
+                <span class="method-start">3467 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

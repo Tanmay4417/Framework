@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Step1:Browser launched succesfully]]>
+    </line>
+    <line>
+      <![CDATA[Step1.1:Maximized the browser succesfully]]>
+    </line>
+    <line>
+      <![CDATA[Step2:Navigating to application via URL succesfully]]>
+    </line>
+    <line>
+      <![CDATA[Title VerifiedLearning Selenium]]>
+    </line>
+    <line>
+      <![CDATA[Step17:Browser closed succesfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-11-06T10:03:36 IST" name="Functionality" finished-at="2024-11-06T10:03:39 IST" duration-ms="2921">
+    <groups>
+    </groups>
+    <test started-at="2024-11-06T10:03:36 IST" name="ChromeTest " finished-at="2024-11-06T10:03:39 IST" duration-ms="2921">
+      <class name="com.Framework.WelcomeTest.VerifyWelcomePageTest">
+        <test-method is-config="true" signature="suitsetup()[pri:0, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a]" started-at="2024-11-06T10:03:36 IST" name="suitsetup" finished-at="2024-11-06T10:03:36 IST" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suitsetup -->
+        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a]" started-at="2024-11-06T10:03:36 IST" name="browserSetup" finished-at="2024-11-06T10:03:39 IST" duration-ms="2595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[file:///D:/Selenium_programs/com.Framework/src/main/resources/SoftWares/webpage.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Step1:Browser launched succesfully]]>
+            </line>
+            <line>
+              <![CDATA[Step1.1:Maximized the browser succesfully]]>
+            </line>
+            <line>
+              <![CDATA[Step2:Navigating to application via URL succesfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="verifywelcomepageWithValidInput()[pri:1, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a]" started-at="2024-11-06T10:03:39 IST" name="verifywelcomepageWithValidInput" finished-at="2024-11-06T10:03:39 IST" duration-ms="44" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'void org.openqa.selenium.support.PageFactory.initElements(org.openqa.selenium.WebDriver, java.lang.Object)'
+at com.Framework.PageRepository.WelcomePage.<init>(WelcomePage.java:13)
+at com.Framework.PageRepository.PageManagment.initwelcomepage(PageManagment.java:26)
+at com.Framework.WelcomeTest.VerifyWelcomePageTest.verifywelcomepageWithValidInput(VerifyWelcomePageTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Title VerifiedLearning Selenium]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifywelcomepageWithValidInput -->
+        <test-method signature="verifyWelcomepageWithinValidinput()[pri:2, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a]" started-at="2024-11-06T10:03:39 IST" name="verifyWelcomepageWithinValidinput" finished-at="2024-11-06T10:03:39 IST" depends-on-methods="com.Framework.WelcomeTest.VerifyWelcomePageTest.verifywelcomepageWithValidInput" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method VerifyWelcomePageTest.verifyWelcomepageWithinValidinput()[pri:2, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method VerifyWelcomePageTest.verifyWelcomepageWithinValidinput()[pri:2, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWelcomepageWithinValidinput -->
+        <test-method is-config="true" signature="terminatebrowser()[pri:0, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a]" started-at="2024-11-06T10:03:39 IST" name="terminatebrowser" finished-at="2024-11-06T10:03:39 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step17:Browser closed succesfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- terminatebrowser -->
+        <test-method is-config="true" signature="suiteTerminateSetup()[pri:0, instance:com.Framework.WelcomeTest.VerifyWelcomePageTest@4efbca5a]" started-at="2024-11-06T10:03:39 IST" name="suiteTerminateSetup" finished-at="2024-11-06T10:03:39 IST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTerminateSetup -->
+      </class> <!-- com.Framework.WelcomeTest.VerifyWelcomePageTest -->
+    </test> <!-- ChromeTest  -->
+  </suite> <!-- Functionality -->
+</testng-results>
